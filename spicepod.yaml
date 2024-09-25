@@ -4,7 +4,7 @@ name: react
 
 datasets:
   - from: github:github.com/reactjs/react.dev/files/main
-    name: docs
+    name: react.docs
     description: React.js documentation and reference, from https://react.dev
     params:
       github_token: ${secrets:GITHUB_TOKEN}
@@ -16,7 +16,7 @@ datasets:
       refresh_jitter_max: 5m
 
   - from: github:github.com/facebook/react/issues
-    name: issues
+    name: react.issues
     description: React.js GitHub issues from github.com/facebook/react
     params:
       github_token: ${secrets:GITHUB_TOKEN}
