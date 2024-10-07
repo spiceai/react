@@ -18,10 +18,12 @@ datasets:
   - from: github:github.com/facebook/react/issues
     name: react.issues
     description: React.js GitHub issues from github.com/facebook/react
+    time_column: created_at
     params:
       github_token: ${secrets:GITHUB_TOKEN}
     acceleration:
       enabled: true
+      refresh_mode: append
       refresh_check_interval: 4h
       refresh_jitter_enabled: true
       refresh_jitter_max: 30m
