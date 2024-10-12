@@ -7,7 +7,9 @@ datasets:
     name: react.docs
     description: React.js documentation and reference, from https://react.dev
     params:
-      github_token: ${secrets:GITHUB_TOKEN}
+      github_client_id: ${secrets:GITHUB_CLIENT_ID}
+      github_private_key: ${secrets:GITHUB_PRIVATE_KEY}
+      github_installation_id: ${secrets:GITHUB_INSTALLATION_ID}
       include: "src/content/learn/**/*.md; src/content/reference/**/*.md"
     acceleration:
       enabled: true
@@ -20,7 +22,9 @@ datasets:
     description: React.js GitHub issues from github.com/facebook/react
     time_column: created_at
     params:
-      github_token: ${secrets:GITHUB_TOKEN}
+      github_client_id: ${secrets:GITHUB_CLIENT_ID}
+      github_private_key: ${secrets:GITHUB_PRIVATE_KEY}
+      github_installation_id: ${secrets:GITHUB_INSTALLATION_ID}
     acceleration:
       enabled: true
       refresh_mode: full

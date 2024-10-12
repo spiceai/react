@@ -3,9 +3,9 @@
 ## Usage
 
 ```yaml
-- from: spice.ai/spiceai/react/react.docs
+- from: spice.ai/spice/react/docs
   name: react.docs
 
-- from: spice.ai/spiceai/react/react.issues
+- from: spice.ai/spice/react/issues
   name: react.issues
 ```
