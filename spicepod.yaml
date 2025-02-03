@@ -40,6 +40,7 @@ datasets:
       github_installation_id: ${secrets:GITHUB_INSTALLATION_ID}
     acceleration:
       enabled: true
+      refresh_sql: "SELECT * FROM react.issues LIMIT 10"
       refresh_mode: full
       refresh_check_interval: 4h
       refresh_jitter_enabled: true
