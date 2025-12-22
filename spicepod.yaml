@@ -2,6 +2,9 @@ version: v1beta1
 kind: Spicepod
 name: react
 
+runtime:
+  dataset_load_parallelism: 1
+
 datasets:
   - from: github:github.com/reactjs/react.dev/files/main
     name: react.docs
